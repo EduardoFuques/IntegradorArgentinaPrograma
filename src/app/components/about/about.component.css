@@ -6,13 +6,11 @@ div {
   text-align: center;
 }
 
-/*Etiqueta nombre*/
 #nombre {
   font-weight: bold;
   margin-top: 30%;
 }
 
-/* Foto de perfil */
 @media (min-width: 992px) {
   #fotodeperfil {
     position: relative;
