@@ -1,0 +1,37 @@
+.row {
+  background-color: #A0C0A9;
+  padding: 20px;
+}
+
+.circle-container {
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  top: 80%; 
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px;
+  background-color: #7B9E8Ed0;
+  color: #FEFDFD;
+  font-size: 14px;
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+  white-space: nowrap;
+}
+
+.circle-container:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 575px) {
+  .circle-container {
+    width: 100%;
+    max-width: 300px; /* Ajusta el valor según tus necesidades */
+    margin: 0 auto;
+  }
+}
