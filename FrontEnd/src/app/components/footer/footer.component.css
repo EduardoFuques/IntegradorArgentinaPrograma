@@ -1,15 +1,15 @@
-.row{
-    background-color: #2D5C4B;
+.row {
+  background-color: #2d5c4b;
 }
-footer{
-    color: #FEFDFD;
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    box-shadow: 2px -2px 5px #FEFDFD;
+footer {
+  color: #fefdfd;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 2px -2px 5px #fefdfd;
 }
-.nombre{
-    margin-top: 15px;
-    margin-bottom: 5px;
+.nombre {
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
