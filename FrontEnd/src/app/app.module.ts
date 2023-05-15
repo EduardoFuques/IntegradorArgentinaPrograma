@@ -58,7 +58,7 @@ import { NewSkillComponent } from './components/hys/new-skill.component';
       radius: 100,
       imageHeight: 100,
       imageWidth: 100,
-      showImage: true,
+      showImage: false,
       showUnits: false,
       showSubtitle: false,
       outerStrokeWidth: 16,
@@ -67,7 +67,9 @@ import { NewSkillComponent } from './components/hys/new-skill.component';
       innerStrokeColor: '#2D5C4B',
       titleColor: '#2D5C4B',
       animation: true,
-      animationDuration: 300
+      animationDuration: 300,
+      titleFontSize: '40px',
+
     }),
     HttpClientModule,
     FormsModule
