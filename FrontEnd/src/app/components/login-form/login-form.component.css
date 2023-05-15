@@ -150,6 +150,36 @@ input[type=text]:placeholder {
   color: #cccccc;
 }
 
+input[type=password] {
+  background-color: #FEFDFD;
+  border: none;
+  color: #2D5C4B;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: 85%;
+  border: 2px solid #7B9E8E;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+input[type=password]:focus {
+  background-color: #fefdfd;
+  border-bottom: 2px solid #2D5C4B;
+}
+
+input[type=password]:placeholder {
+    /* No veo cambios */
+  color: #cccccc;
+}
 
 
 /* ANIMATIONS */
@@ -241,15 +271,14 @@ input[type=text]:placeholder {
   bottom: -10px;
   width: 0;
   height: 2px;
-  /* No veo cambios */
-  background-color: #56baed;
+  background-color: #2D5C4B;
   content: "";
   transition: width 0.2s;
 }
 
 .underlineHover:hover {
     /* No veo cambios */
-  color: #0d0d0d;
+  color: #1f4134;
 }
 
 .underlineHover:hover:after{
@@ -270,4 +299,9 @@ input[type=text]:placeholder {
   top: -10px;
   position: relative;
   border: 2px solid #7B9E8E;
+}
+
+.signinFooter {
+  display: flex;
+  justify-content: center;
 }

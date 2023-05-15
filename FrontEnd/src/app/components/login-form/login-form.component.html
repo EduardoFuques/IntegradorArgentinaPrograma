@@ -6,44 +6,35 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<!------ Include the above in your HEAD tag ---------->
-
-
-    <div class="wrapper fadeInDown">
-      <div id="formContent">
-        <!-- Tabs Titles -->
-
-        <!-- Icon -->
-        <div class="fadeIn first">
-          <img
-            src="../../../assets/profile-photo.jpg"
-            id="icon"
-            alt="User Icon"
-          />
-        </div>
-
-        <!-- Login Form -->
-        <form>
-          <input
-            type="text"
-            id="login"
-            class="fadeIn second"
-            name="login"
-            placeholder="Nombre de Usuario"
-          />
-          <input
-            type="text"
-            id="password"
-            class="fadeIn third"
-            name="login"
-            placeholder="Contraseña"
-          />
-          <input type="submit" class="fadeIn fourth" value="Ingresar" />
-        </form>
-
-        <!-- Remind Passowrd -->
-        <div id="formFooter">
-          <a class="underlineHover" href="#">¿Olvidaste tu contraseña?</a>
-        </div>
-      </div>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <div class="fadeIn first">
+      <img src="../../../assets/profile-photo.jpg" id="icon" alt="User Icon" />
     </div>
+    <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+      <input
+        type="text"
+        id="nombreUsuario"
+        class="fadeIn second"
+        name="nombreUsuario"
+        placeholder="Nombre de Usuario"
+        [(ngModel)]="nombreUsuario"
+        required
+      />
+      <input
+        type="password"
+        id="password"
+        class="fadeIn third"
+        name="password"
+        placeholder="Contraseña"
+        [(ngModel)]="password"
+        required
+      />
+      <input type="submit" class="fadeIn fourth" value="Ingresar" />
+    </form>
+    <div id="formFooter" class="signinFooter">
+      <!-- <a class="underlineHover" href="#">¿Olvidaste tu contraseña?</a> -->
+      <a class="underlineHover" href="#">Registrarse</a>
+    </div>
+  </div>
+</div>
