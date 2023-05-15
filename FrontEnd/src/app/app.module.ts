@@ -21,6 +21,10 @@ import { FormsModule } from '@angular/forms';
 import { interceptorProvider } from './service/interceptor-service';
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
+import { NewEducacionComponent } from './components/educacion/new-educacion.component';
+import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
+import { EditSkillComponent } from './components/hys/edit-skill.component';
+import { NewSkillComponent } from './components/hys/new-skill.component';
 
 @NgModule({
   declarations: [
@@ -38,12 +42,33 @@ import { EditExperienciaComponent } from './components/experiencia/edit-experien
     LoginComponent,
     LoginFormComponent,
     NewExperienciaComponent,
-    EditExperienciaComponent
+    EditExperienciaComponent,
+    NewEducacionComponent,
+    EditEducacionComponent,
+    EditSkillComponent,
+    NewSkillComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgCircleProgressModule.forRoot({}),
+    NgCircleProgressModule.forRoot({
+      // set defaults here
+      responsive: true,
+      radius: 100,
+      imageHeight: 100,
+      imageWidth: 100,
+      showImage: true,
+      showUnits: false,
+      showSubtitle: false,
+      outerStrokeWidth: 16,
+      innerStrokeWidth: 2,
+      outerStrokeColor: '#2D5C4B',
+      innerStrokeColor: '#2D5C4B',
+      titleColor: '#2D5C4B',
+      animation: true,
+      animationDuration: 300
+    }),
     HttpClientModule,
     FormsModule
   ],
