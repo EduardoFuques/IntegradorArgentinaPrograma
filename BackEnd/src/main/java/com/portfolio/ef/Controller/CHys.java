@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@CrossOrigin(origins = "https://frontendef-639cc.web.app/")
+@CrossOrigin(origins = "**")
 @RequestMapping("/skill")
 public class CHys {
 
