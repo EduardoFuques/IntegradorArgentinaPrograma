@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.portfolio</groupId>
     <artifactId>ef</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0-PROD</version>
     <name>ef</name>
     <description>Portfolio de Eduardo Fuques</description>
     <properties>

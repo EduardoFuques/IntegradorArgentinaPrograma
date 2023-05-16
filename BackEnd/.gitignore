@@ -1,5 +1,6 @@
 HELP.md
 target/
+!target/ef-1.0-PROD.jar
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
